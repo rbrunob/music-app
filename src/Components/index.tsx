@@ -1,5 +1,10 @@
+import Header from "./Header";
+
+
 export default function MusicApp() {
     return (
-        <div>Hello World</div>
+        <header>
+            <Header />
+        </header>
     );
 }
