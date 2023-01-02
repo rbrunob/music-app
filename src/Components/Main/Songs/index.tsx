@@ -1,6 +1,7 @@
 import rockcard from '../../../assets/rock-card.jpg';
 import brazilianrock from '../../../assets/brazilian-rock-card.jpg';
 import classicrock from '../../../assets/classic-rock-card.jpg';
+import { FaPlay } from 'react-icons/fa';
 import styles from './Songs.module.scss';
 
 const songList = [
@@ -18,7 +19,37 @@ const songList = [
         bannerAlbum: classicrock,
         titleSong: 'Title',
         description: 'Description'
-    }
+    },
+    {
+        bannerAlbum: rockcard,
+        titleSong: 'Rock',
+        description: 'Description'
+    },
+    {
+        bannerAlbum: brazilianrock,
+        titleSong: 'Title',
+        description: 'Description'
+    },
+    {
+        bannerAlbum: classicrock,
+        titleSong: 'Title',
+        description: 'Description'
+    },
+    {
+        bannerAlbum: rockcard,
+        titleSong: 'Rock',
+        description: 'Description'
+    },
+    {
+        bannerAlbum: brazilianrock,
+        titleSong: 'Title',
+        description: 'Description'
+    },
+    {
+        bannerAlbum: classicrock,
+        titleSong: 'Title',
+        description: 'Description'
+    },
 ];
 
 export default function Songs() {
@@ -31,6 +62,9 @@ export default function Songs() {
                             src={song.bannerAlbum}
                             alt={song.titleSong}
                         />
+                        <div className={styles.song_banner_play}>
+                            <FaPlay />
+                        </div>
                     </div>
                     <div className={styles.song_info}>
                         <h3>{song.titleSong}</h3>

@@ -1,8 +1,20 @@
 .main {
-    display: block;
+    display: flex;
+    width: 75%;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    left: 120px;
+    overflow: hidden;
 
     &_section {
         display: block;
+        overflow: hidden;
+        width: auto;
+        h3 {
+            font-size: 24px;
+            color: white;
+        }
     }
 
     &_song {
