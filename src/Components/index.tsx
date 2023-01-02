@@ -2,6 +2,7 @@ import Header from "./Header";
 import Main from "./Main";
 import MenuSide from "./MenuSide";
 import styles from './MusicApp.module.scss';
+import Player from "./Player";
 
 
 export default function MusicApp() {
@@ -15,6 +16,9 @@ export default function MusicApp() {
                 <MenuSide />
                 <Main />
             </main>
+            <div>
+                <Player /> 
+            </div>
         </>
     );
 }
