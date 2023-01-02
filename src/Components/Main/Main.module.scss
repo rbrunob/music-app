@@ -1,0 +1,11 @@
+.main {
+    display: block;
+
+    &_section {
+        display: block;
+    }
+
+    &_song {
+        display: flex;
+    }
+}

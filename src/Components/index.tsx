@@ -1,10 +1,20 @@
 import Header from "./Header";
+import Main from "./Main";
+import MenuSide from "./MenuSide";
+import styles from './MusicApp.module.scss';
 
 
 export default function MusicApp() {
     return (
-        <header>
-            <Header />
-        </header>
+        <>
+            <header>
+                <Header />
+            </header>
+
+            <main className={styles.main_container}>
+                <MenuSide />
+                <Main />
+            </main>
+        </>
     );
 }

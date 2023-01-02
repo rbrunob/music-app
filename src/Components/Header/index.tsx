@@ -1,5 +1,4 @@
 import styles from './Header.module.scss'
-import { ReactComponent as Logo } from '../../assets/Logo.svg';
 import { RiArrowDownSFill } from 'react-icons/ri';
 import profile from '../../assets/icon-profile.jpg';
 import users from '../users.json';
@@ -8,9 +7,6 @@ export default function Header() {
     return (
 
         <nav className={styles.header}>
-            <div className={styles.header_logo}>
-                <Logo />
-            </div>
             <div className={styles.header_actions}>
                 <div className={styles.upgrade}>
                     Faça upgrade

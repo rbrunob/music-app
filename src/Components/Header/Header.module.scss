@@ -2,19 +2,13 @@
 
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     background-color: $bg-menu-superior;
     height: 60px;
     padding: 0 3%;
     width: auto;
-
-    &_logo {
-        svg {
-            width: 100px;
-            height: auto;
-        }
-    }
+    
     &_actions {
         display: flex;
         align-items: center;
