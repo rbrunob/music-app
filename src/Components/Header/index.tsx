@@ -4,6 +4,7 @@ import profile from '../../assets/icon-profile.jpg';
 import users from '../users.json';
 
 export default function Header() {
+
     return (
 
         <nav className={styles.header}>
@@ -12,10 +13,15 @@ export default function Header() {
                     Faça upgrade
                 </div>
                 <div className={styles.profile}>
+                    <div className={styles.profile_title}>
+                        {users.map(user => user.username)}
+                    </div>
                     <div className={styles.profile_pics}>
                         <img src={profile} alt="My Profile Icon" />
                     </div>
-                    <p className={styles.profile_username}>
+                    <p
+                        className={styles.profile_username}
+                    >
                         {users.map(user => user.username)}
                         <RiArrowDownSFill />
                     </p>

@@ -12,12 +12,12 @@ const songList = [
     },
     {
         bannerAlbum: brazilianrock,
-        titleSong: 'Title',
+        titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
         bannerAlbum: classicrock,
-        titleSong: 'Title',
+        titleSong: 'Classic Rock',
         description: 'Description'
     },
     {
@@ -27,12 +27,12 @@ const songList = [
     },
     {
         bannerAlbum: brazilianrock,
-        titleSong: 'Title',
+        titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
         bannerAlbum: classicrock,
-        titleSong: 'Title',
+        titleSong: 'Classic Rock',
         description: 'Description'
     },
     {
@@ -42,17 +42,18 @@ const songList = [
     },
     {
         bannerAlbum: brazilianrock,
-        titleSong: 'Title',
+        titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
         bannerAlbum: classicrock,
-        titleSong: 'Title',
+        titleSong: 'Classic Rock',
         description: 'Description'
     },
 ];
 
 export default function Songs() {
+
     return (
         <div className={styles.container_songs}>
             {songList.map((song) => (
