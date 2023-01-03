@@ -2,17 +2,23 @@ import styles from './Player.module.scss';
 import teste from '../../assets/brazilian-rock-card.jpg'
 import { HiOutlineHeart } from 'react-icons/hi';
 import { CgMiniPlayer } from 'react-icons/cg';
-import { GiPauseButton } from 'react-icons/gi'; 
+import { GiPauseButton } from 'react-icons/gi';
+import { GiPlayButton } from 'react-icons/gi';
 import { RxShuffle } from 'react-icons/rx';
-import { TbRepeat } from 'react-icons/tb'; 
-import { AiFillStepBackward } from 'react-icons/ai'; 
-import { AiFillStepForward } from 'react-icons/ai'; 
+import { TbRepeat } from 'react-icons/tb';
+import { AiFillStepBackward } from 'react-icons/ai';
+import { AiFillStepForward } from 'react-icons/ai';
 import { TbMicrophone2 } from 'react-icons/tb';
 import { HiQueueList } from 'react-icons/hi2';
 import { TbDevices2 } from 'react-icons/tb';
 import { RiVolumeDownFill } from 'react-icons/ri';
 
 export default function Player() {
+
+    function switchPLay(e:any) {
+        console.log(e.target.path)
+    }
+
     return (
         <div className={styles.container_player}>
             <div className={styles.player}>
@@ -37,7 +43,12 @@ export default function Player() {
                     <div className={styles.controls}>
                         <div className={styles.controls_icons}><RxShuffle /></div>
                         <div className={styles.controls_icons}><AiFillStepBackward /></div>
-                        <div className={styles.controls_icons}><GiPauseButton /></div>
+                        <div
+                            className={styles.controls_icons}
+                            onClick={switchPLay}
+                        >
+                            <GiPlayButton />
+                        </div>
                         <div className={styles.controls_icons}><AiFillStepForward /></div>
                         <div className={styles.controls_icons}><TbRepeat /></div>
                     </div>

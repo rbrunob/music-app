@@ -1,7 +1,7 @@
 import rockcard from '../../../assets/rock-card.jpg';
 import brazilianrock from '../../../assets/brazilian-rock-card.jpg';
 import classicrock from '../../../assets/classic-rock-card.jpg';
-import { FaPlay } from 'react-icons/fa';
+import { GiPlayButton } from 'react-icons/gi';
 import styles from './Songs.module.scss';
 
 const songList = [
@@ -63,7 +63,7 @@ export default function Songs() {
                             alt={song.titleSong}
                         />
                         <div className={styles.song_banner_play}>
-                            <FaPlay />
+                            <GiPlayButton />
                         </div>
                     </div>
                     <div className={styles.song_info}>
