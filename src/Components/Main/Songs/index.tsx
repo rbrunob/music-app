@@ -1,52 +1,60 @@
-import rockcard from '../../../assets/rock-card.jpg';
-import brazilianrock from '../../../assets/brazilian-rock-card.jpg';
-import classicrock from '../../../assets/classic-rock-card.jpg';
+import anos2000 from '../../../assets/anos-200.jpg';
+import brazilianRock from '../../../assets/brazilian-rock-card.jpg';
+import classicRock from '../../../assets/classic-rock-card.jpg';
+import hits from '../../../assets/hists.jpg';
+import mix01 from '../../../assets/default.jpg';
+import mix02 from '../../../assets/mix-sc.jpg';
+import cardRock from '../../../assets/rock-card.jpg';
+import hitsToday from '../../../assets/today-hits.jpg';
+import brazilTop from '../../../assets/top-brazil.jpg';
 import { GiPlayButton } from 'react-icons/gi';
 import styles from './Songs.module.scss';
 
+
+
 const songList = [
     {
-        bannerAlbum: rockcard,
+        bannerAlbum: anos2000,
         titleSong: 'Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: brazilianrock,
+        bannerAlbum: brazilianRock,
         titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: classicrock,
+        bannerAlbum: classicRock,
         titleSong: 'Classic Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: rockcard,
+        bannerAlbum: hits,
         titleSong: 'Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: brazilianrock,
+        bannerAlbum: mix01,
         titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: classicrock,
+        bannerAlbum: mix02,
         titleSong: 'Classic Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: rockcard,
+        bannerAlbum: cardRock,
         titleSong: 'Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: brazilianrock,
+        bannerAlbum: hitsToday,
         titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
-        bannerAlbum: classicrock,
+        bannerAlbum: brazilTop,
         titleSong: 'Classic Rock',
         description: 'Description'
     },
