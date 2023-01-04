@@ -14,46 +14,55 @@ import styles from './Songs.module.scss';
 
 const songList = [
     {
+
         bannerAlbum: anos2000,
         titleSong: 'Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: brazilianRock,
         titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: classicRock,
         titleSong: 'Classic Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: hits,
         titleSong: 'Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: mix01,
         titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: mix02,
         titleSong: 'Classic Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: cardRock,
         titleSong: 'Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: hitsToday,
         titleSong: 'Brazilian Rock',
         description: 'Description'
     },
     {
+
         bannerAlbum: brazilTop,
         titleSong: 'Classic Rock',
         description: 'Description'
@@ -68,6 +77,7 @@ export default function Songs() {
                 <div className={styles.song}>
                     <div className={styles.song_banner}>
                         <img
+
                             src={song.bannerAlbum}
                             alt={song.titleSong}
                         />
@@ -76,8 +86,12 @@ export default function Songs() {
                         </div>
                     </div>
                     <div className={styles.song_info}>
-                        <h3>{song.titleSong}</h3>
-                        <p>{song.description}</p>
+                        <h3>
+                            {song.titleSong}
+                        </h3>
+                        <p>
+                            {song.description}
+                        </p>
                     </div>
                 </div>
             ))}

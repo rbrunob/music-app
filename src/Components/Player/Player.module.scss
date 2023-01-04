@@ -16,10 +16,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 30px;
     &_songinfo {
         width: 30%;
         height: 90px;
-        min-width: 180px;
+        min-width: 230px;
         display: flex;
         gap: 20px;
         align-items: center;
@@ -121,6 +122,7 @@
             align-items: center;
             justify-content: center;
             gap: 10px;
+            width: 100%;
 
             &_time {
                 font-size: 12px;
@@ -128,7 +130,9 @@
             }
 
             &_progress {
-                width: 626px;
+                max-width: 626px;
+                width: 100%;
+                min-width: 150px;
                 height: 4px;
                 background-color: $font-color-default;
                 border-radius: 4px;
@@ -143,6 +147,7 @@
         width: 30%;
         color: white;
         gap: 10px;
+        min-width: 220px;
 
         &_icons {
             width: 20px;
