@@ -15,7 +15,7 @@ import { RiVolumeDownFill } from 'react-icons/ri';
 
 export default function Player() {
 
-    function switchPLay(e:any) {
+    function switchPLay(e: any) {
         console.log(e.target.path)
     }
 
@@ -54,7 +54,11 @@ export default function Player() {
                     </div>
                     <div className={styles.timer}>
                         <span className={styles.timer_time}>0:00</span>
-                        <div className={styles.timer_progress}></div>
+                        <div className={styles.timer_progress}>
+                            <div className={styles['progress--active']}>
+                                <div className={styles.button_action}></div>
+                            </div>
+                        </div>
                         <span className={styles.timer_time}>3:35</span>
                     </div>
                 </div>
@@ -64,7 +68,11 @@ export default function Player() {
                     <div className={styles.player_othercontrols_icons}><TbDevices2 /></div>
                     <div className={styles.player_othercontrols_volum}>
                         <div className={styles.volum_icon}><RiVolumeDownFill /></div>
-                        <div className={styles.volum_bar}></div>
+                        <div className={styles.volum_bar}>
+                            <div className={styles['volum_bar--active']}>
+                                <div className={styles.button_action}></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

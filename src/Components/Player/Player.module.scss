@@ -59,7 +59,7 @@
 
                 svg {
                     stroke: $font-color-default;
-                    width: 20px;
+                    width: 16px;
                     height: auto;
                     cursor: pointer;
                 }
@@ -73,7 +73,6 @@
             }
         }
     }
-
 
     &_controls {
         width: 40%;
@@ -91,8 +90,8 @@
             gap: 10px;
 
             &_icons {
-                width: 25px;
-                height: 25px;
+                width: 22px;
+                height: 22px;
                 cursor: pointer;
                 svg {
                     width: 100%;
@@ -102,7 +101,6 @@
                         cursor: pointer;
                     }
                 }
-                
             }
 
             &_icons:nth-child(3) {
@@ -136,6 +134,28 @@
                 height: 4px;
                 background-color: $font-color-default;
                 border-radius: 4px;
+
+                &:hover .progress--active {
+                    display: flex;
+                }
+
+                .progress--active {
+                    width: 40%;
+                    height: 4px;
+                    border-radius: 4px;
+                    background-color: #1ed760;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    display: none;
+                }
+                .button_action {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: white;
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -150,7 +170,7 @@
         min-width: 220px;
 
         &_icons {
-            width: 20px;
+            width: 16px;
             height: auto;
             display: flex;
             align-items: center;
@@ -172,7 +192,7 @@
             justify-content: center;
             gap: 10px;
             .volum_icon {
-                width: 20px;
+                width: 16px;
                 height: auto;
                 display: flex;
                 align-items: center;
@@ -194,6 +214,30 @@
                 height: 4px;
                 background-color: $font-color-default;
                 border-radius: 4px;
+                display: flex;
+                align-items: center;
+
+                &:hover .volum_bar--active {
+                    display: flex;
+                }
+
+                .volum_bar--active {
+                    width: 40%;
+                    height: 4px;
+                    border-radius: 4px;
+                    background-color: #1ed760;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    display: none;
+                }
+                .button_action {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: white;
+                    cursor: pointer;
+                }
             }
         }
     }
